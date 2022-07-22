@@ -6,7 +6,7 @@ const initialState = {
     error: ''
 }
 export const fetchProducts = createAsyncThunk('products/fetchProducts', () => {
-    return axios.get('https://mocki.io/v1/4da56061-7547-4112-a24d-bb4799b017f5')
+    return axios.get('https://mocki.io/v1/654b9036-74c5-402e-a96e-8e1cf38d20fd')
         .then(res => res.data)
 })
 

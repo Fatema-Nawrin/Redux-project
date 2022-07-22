@@ -1,3 +1,5 @@
+import { faShoppingBag, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom'
 
@@ -11,16 +13,18 @@ const Navbar = () => {
                     </label>
                     <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 ">
                         <li><Link to='/home'>Home </Link> </li>
-                        <li><Link to='/home'>Products </Link> </li>
+                        <li><Link to='/notes'>Fragrance-Notes</Link> </li>
+                        <li><Link to='/cart'>Bag <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></Link> </li>
 
                     </ul>
                 </div>
-                <h2 className="font-medium text-3xl">Aromallure</h2>
+                <h2 className="font-medium px-2 text-3xl lg:text-4xl lg:pl-8">Aromallure</h2>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal p-0">
+                <ul className="menu menu-horizontal m-4 p-0">
                     <li><Link to='/home'>Home </Link> </li>
-                    <li><Link to='/home'>Products </Link> </li>
+                    <li><Link to='/notes'>Fragrance-Notes</Link> </li>
+                    <li><Link to='/cart'>Bag <FontAwesomeIcon icon={faShoppingBag}></FontAwesomeIcon> </Link> </li>
                 </ul>
             </div>
 
