@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../Redux/productSlice';
 import Loading from './Loading';
 import Product from './Product';
+import './styles.css'
 
 const AllProducts = () => {
     const { loading, products, error } = useSelector(state => state.products);
@@ -23,10 +24,10 @@ const AllProducts = () => {
         <div className='py-4 w-11/12 mx-auto'>
             <h2 className='text-center text-lg md:text-xl pb-8'>Choose your signature scent from <span className='font-semibold'> Aromallure</span></h2>
             <div className='text-center p-8'>
-                <button onClick={() => handleFilter('women')} className='btn bg-blue-400 border-none border-1'>
+                <button onClick={() => handleFilter('women')} className='btn optionBtn bg-blue-400 border-none border-1'>
                     Women's
                 </button>
-                <button onClick={() => handleFilter('men')} className='btn bg-blue-400 border-none border-1 mx-4'>
+                <button onClick={() => handleFilter('men')} className='optionBtn btn bg-blue-400 border-none border-1 mx-4'>
                     Men's
                 </button>
                 <button onClick={() => handleFilter('')} className='btn bg-blue-400 border-none border-1'>

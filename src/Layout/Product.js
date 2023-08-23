@@ -9,7 +9,7 @@ const Product = ({ product }) => {
     const dispatch = useDispatch()
     return (
         <div className="card bg-base-100 shadow-xl p-3">
-            <figure><img className='h-96 w-full rounded-xl' src={img} alt={name} /></figure>
+            <img className='h-96 w-full rounded-xl' src={img} alt={name} />
             <div className="card-body">
                 <h2 className="card-title text-blue-400">{name}</h2>
                 <p className='pb-4'>Price: ${price}</p>
